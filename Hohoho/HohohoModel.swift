@@ -31,13 +31,38 @@ class new: LearnerModel {
 
 
 class Vehicle {
-    var currentSpeed = 0.0
-    var description: String {
-        return "traveling at \(currentSpeed) miles per hour"
+    var maxSpeed = 0.0
+    var numberOfEngine = 0
+    var color = ""
+    var fieldOfTravel = ""
+    
+    func  accelerate() {
     }
-    func makeNoise() {
-        // do nothing - an arbitrary vehicle doesn't necessarily make a noise
+}
+class Motorcycle: Vehicle
+{
+    func GrabRide() -> String{
+        return "narik penumpang"
     }
+}
+class Car: Vehicle
+{
+    func GoCar() -> String {
+        return "narik penumpang"
+    }
+    
+}
+class Bicycle: Vehicle
+{
+    var jumlahbel = 0
+    
+}
+class Boat: Vehicle
+{
+    var tujuan = ""
+}
+class GrabWheels: Vehicle {
+    var periodWaktuSewa = 0
 }
 
 

@@ -26,7 +26,11 @@ class LearnerModel{
 }
 
 class new: LearnerModel {
-    var position: String?
+    var position: String
+    init(namenew: String, agenew: Int, gendernew: String, imageProfilenew: String, positionnew: String) {
+        position = positionnew
+        super.init(nameLearner: namenew, ageLearner: agenew, genderLearner: gendernew, imageProfileLearner: imageProfilenew)
+    }
 }
 
 
